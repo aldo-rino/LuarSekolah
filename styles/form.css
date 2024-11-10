@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.parentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 25%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+form {
+    padding-top: 15px;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+form p input, select {
+    color: white;
+    background-color: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 2%;
+}
+
+#buttonLogin {
+    margin-top: 15%;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+h3 {
+    text-align: center;
+}

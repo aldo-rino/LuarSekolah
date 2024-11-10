@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section div {
+    border: 2px solid white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+}

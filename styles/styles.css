@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 37, 37);
+}
+
+body {
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    z-index: 1000;
+}
+
+.logoProfute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    gap: 5px;
+}
+
+header div h1 {
+    background-color: rgb(27, 27, 27);
+}
+
+header div nav {
+    background-color: rgb(27, 27, 27);
+}
+
+header div nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(27, 27, 27);
+}
+
+header div nav a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 4px;
+}
+
+header div .button, header div input {
+    color: white;
+    background: none;  
+    border-radius: 5px;
+    border: solid 2px;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttonLanding {
+    color: white;
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.buttonLanding:hover {
+    color: black;
+    background-color: white;
+}
+header div .button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Landing Page */
+/* ini ubah jadi full satu halaman */
+.landingPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landingPage div {
+    text-align: center;
+}
+
+.landingPage div div {
+    display: flex;
+
+}
+
+.landingPage div ul {
+    display: flex; 
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.landingPage div h3 {
+    font-size: 40px;
+}
+
+.landingPage div p {
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.landingPage div ul li {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+/* Profile Lembaga */
+.ourProfile {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.ourProfile h3 {
+    font-size: 35px;
+    padding-top: 5px;
+}
+
+.ourProfile p {
+    font-size: 20px;
+    padding-top: 5px;
+    font-weight: normal;
+}
+
+/* Program pelatihan (element card) */
+.ourProgram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.ourProgram div {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: 20px;
+}
+
+.ourProgram div div {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ourProgram div div a {
+    color: white;
+    background: none;  
+    border-radius: 5px;
+    border: solid 2px;
+    max-width: 60px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.ourProgram div div a:hover {
+    background-color: white;
+    color: black;
+}
+
+.ourProgram h3 {
+    font-size: 35px;
+}
+
+.ourProgram div div h3 {
+    font-size: 25px;
+}
+
+.ourProgram div div p {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* news article */
+
+.newsArticle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.newsArticle div {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 75%;
+    margin: 20px;
+}
+
+.newsArticle div div {
+    flex: 1 1 45%;
+    flex-direction: column;
+    text-align: justify;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.newsArticle h3 {
+    font-size: 35px;
+}
+
+.newsArticle div div h3 {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.newsArticle p {
+    font-size: 20px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    margin-bottom: 30px;
+}
+
+.imageCarousel {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.imageCarousel button {
+    color: white;
+    background: none;  
+    border-radius: 100%;
+    border: solid 2px;
+    width: 25px;
+    height: 25px;
+}
+
+.imageCarousel button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.gallery div img {
+    max-width: 300px;
+    max-height: 300px;
+    display: none;
+}
+
+.gallery div img.active {
+    display: block;
+}
+
+.gallery h3 {
+    font-size: 35px;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    background-color: rgb(27, 27, 27);
+}
+
+footer div p {
+    padding-top: 5px;
+    background-color: rgb(27, 27, 27);
+}
+
+/* image */
+.logo {
+    width: 35px;
+    background-color: rgb(27, 27, 27);
+}
+
+.socialMedia {
+    background-color: rgb(27, 27, 27);
+}
+
+.socialMedia img {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(27, 27, 27);
+    margin-right: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#dropdown {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+
+/* php */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #cb7b7b;
+    text-align: left;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1a1a;
+}
