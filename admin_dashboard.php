@@ -1,7 +1,6 @@
 <?php
 include 'db_connect.php';
 
-// Fetch users
 $sql = "SELECT id, name, email FROM users";
 $result = $conn->query($sql);
 ?>
@@ -16,8 +15,6 @@ $result = $conn->query($sql);
 </head>
 <body>
     <h2>Admin Dashboard - Manage Members</h2>
-
-    <!-- Add Member Form -->
     <h3>Add New Member</h3>
     <form action="add_member.php" method="POST">
         <input type="text" name="name" placeholder="Name" required>
@@ -26,7 +23,6 @@ $result = $conn->query($sql);
         <button type="submit">Add Member</button>
     </form>
 
-    <!-- Display Members -->
     <h3>Registered Members</h3>
     <table>
         <tr>
